@@ -1,38 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ListGroup</title>
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div class="container">
-      <div class="row">
-        <div class="col-md-4 h-50">
-            <ul class="list-group">
-                <li class="list-group-item active list-group-item-action list-group-item-danger"><a href="" class="text-decoration-none text-warning">Home</a></li>
-                <li class="list-group-item list-group-item-action list-group-item-danger"><a href="" class="text-decoration-none">Profile</a></li>
-                <li class="list-group-item list-group-item-action list-group-item-danger"><a href="" class="text-decoration-none">Setting</a></li>
-                <li class="list-group-item list-group-item-action list-group-item-danger"><a href="" class="text-decoration-none">Contact</a></li>
-                <li class="list-group-item list-group-item-action list-group-item-danger"><a href="" class="text-decoration-none">About</a></li>
-            </ul>
+      <div class="row gap-4">
+        <div class="col-md-4">
+          <div class="list-group m-auto w-100">
+            <a
+              role="tab"
+              data-toggle="list"
+              href="#home"
+              class="text-decoration-none text-warning list-group-item active list-group-item-action list-group-item-dark"
+              >Home</a
+            >
+
+            <a
+              role="tab"
+              data-toggle="list"
+              href="#profile"
+              class="text-decoration-none list-group-item list-group-item-action list-group-item-dark"
+              >Profile</a
+            >
+
+            <a
+              role="tab"
+              data-toggle="list"
+              href="#setting"
+              class="text-decoration-none list-group-item list-group-item-action list-group-item-dark"
+              >Setting</a
+            >
+
+            <a
+              role="tab"
+              data-toggle="list"
+              href="#contact"
+              class="text-decoration-none list-group-item list-group-item-action list-group-item-dark"
+              >Contact</a
+            >
+
+            <a
+              role="tab"
+              data-toggle="list"
+              href="#about"
+              class="text-decoration-none list-group-item list-group-item-action list-group-item-dark"
+              >About</a
+            >
+          </div>
         </div>
-        <div class="col-md-8 h-50">
-            <div class="tab-content p-2">
-                <div class="tab-pane active show fade">
-                    <h2 class="card-title border-bottom pb-2 fw-bold">Home</h2>
-                    <p class="card-text pt-2 ps-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolorem praesentium illum nisi quos officia in voluptate nobis dolor laborum amet deleniti iure ratione repudiandae, porro esse, obcaecati eveniet incidunt? Explicabo voluptatum minima iure, earum delectus iste sequi ex consectetur!</p>
-                    <button class="btn btn-warning btn-outline-danger">Read Mehr</button>
-                </div>
+        <div class="col-md-6">
+          <div class="tab-content p-2">
+            <div id="home" class="tab-pane active show fade">
+              <h2 class="card-title border-bottom pb-2 fw-bold">Home</h2>
+              <p class="card-text pt-2 ps-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae dolorem praesentium illum nisi quos officia in
+                voluptate nobis dolor laborum amet deleniti iure ratione
+                repudiandae, porro esse, obcaecati eveniet incidunt? Explicabo
+                voluptatum minima em praesentium illum nisi quos officia in
+                voluptate nobis dolor laborum amet deleniti iure ratione
+                repudiandae, porro esse, obcaecati eveniet incidunt? Explicabo
+                voluptatum minima iure, earum delectus iste sequi ex
+                consectetur!
+              </p>
+              <button class="btn btn-warning btn-outline-danger ms-2">
+                Read Mehr
+              </button>
             </div>
+            <div id="profile" class="tab-pane fade">
+              <h2 class="card-title border-bottom pb-2 fw-bold">Profile</h2>
+              <p class="card-text pt-2 ps-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae dolorem praesentium illum nisi quos officia in
+                voluptate nobis dolor laborum amet deleniti iure ratione
+                repudiandae, porro esse, obcaecati eveniet incidunt? Explicabo
+                voluptatum minima em praesentium illum nisi quos officia in
+                voluptate nobis dolor laborum amet deleniti iure ratione
+                repudiandae, porro esse, obcaecati eveniet incidunt? Explicabo
+                voluptatum minima iure, earum delectus iste sequi ex
+                consectetur!
+              </p>
+              <button class="btn btn-warning btn-outline-danger ms-2">
+                Read Mehr
+              </button>
+            </div>
+            <div id="setting" class="tab-pane fade">
+              <h2 class="card-title border-bottom pb-2 fw-bold">Setting</h2>
+              <p class="card-text pt-2 ps-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae dolorem praesentium illum nisi quos officia in
+                voluptate nobis dolor laborum amet deleniti iure ratione
+                repudiandae, porro esse, obcaecati eveniet incidunt? Explicabo
+                voluptatum minima em praesentium illum nisi quos officia in
+                voluptate nobis dolor laborum amet deleniti iure ratione
+                repudiandae, porro esse, obcaecati eveniet incidunt? Explicabo
+                voluptatum minima iure, earum delectus iste sequi ex
+                consectetur!
+              </p>
+              <button class="btn btn-warning btn-outline-danger ms-2">
+                Read Mehr
+              </button>
+            </div>
+            <div id="contact" class="tab-pane fade">
+              <h2 class="card-title border-bottom pb-2 fw-bold">Contactt</h2>
+              <p class="card-text pt-2 ps-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae dolorem praesentium illum nisi quos officia in
+                voluptate nobis dolor laborum amet deleniti iure ratione
+                repudiandae, porro esse, obcaecati eveniet incidunt? Explicabo
+                voluptatum minima em praesentium illum nisi quos officia in
+                voluptate nobis dolor laborum amet deleniti iure ratione
+                repudiandae, porro esse, obcaecati eveniet incidunt? Explicabo
+                voluptatum minima iure, earum delectus iste sequi ex
+                consectetur!
+              </p>
+              <button class="btn btn-warning btn-outline-danger ms-2">
+                Read Mehr
+              </button>
+            </div>
+            <div id="about" class="tab-pane fade">
+              <h2 class="card-title border-bottom pb-2 fw-bold">Setting</h2>
+              <p class="card-text pt-2 ps-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae dolorem praesentium illum nisi quos officia in
+                voluptate nobis dolor laborum amet deleniti iure ratione
+                repudiandae, porro esse, obcaecati eveniet incidunt? Explicabo
+                voluptatum minima em praesentium illum nisi quos officia in
+                voluptate nobis dolor laborum amet deleniti iure ratione
+                repudiandae, porro esse, obcaecati eveniet incidunt? Explicabo
+                voluptatum minima iure, earum delectus iste sequi ex
+                consectetur!
+              </p>
+              <button class="btn btn-warning btn-outline-danger ms-2">
+                Read Mehr
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-</body>
+  </body>
 </html>
