@@ -17,7 +17,7 @@
           <div class="list-group m-auto w-100">
             <a
               role="tab"
-              data-toggle="list"
+              data-bs-toggle="list"
               href="#home"
               class="text-decoration-none text-warning list-group-item active list-group-item-action list-group-item-dark"
               >Home</a
@@ -25,7 +25,7 @@
 
             <a
               role="tab"
-              data-toggle="list"
+              data-bs-toggle="list"
               href="#profile"
               class="text-decoration-none list-group-item list-group-item-action list-group-item-dark"
               >Profile</a
@@ -33,15 +33,16 @@
 
             <a
               role="tab"
-              data-toggle="list"
+              data-bs-toggle="list"
               href="#setting"
               class="text-decoration-none list-group-item list-group-item-action list-group-item-dark"
               >Setting</a
             >
 
             <a
+              id="conntact-list"
               role="tab"
-              data-toggle="list"
+              data-bs-toggle="list"
               href="#contact"
               class="text-decoration-none list-group-item list-group-item-action list-group-item-dark"
               >Contact</a
@@ -49,7 +50,7 @@
 
             <a
               role="tab"
-              data-toggle="list"
+              data-bs-toggle="list"
               href="#about"
               class="text-decoration-none list-group-item list-group-item-action list-group-item-dark"
               >About</a
@@ -109,7 +110,11 @@
                 Read Mehr
               </button>
             </div>
-            <div id="contact" class="tab-pane fade">
+            <div
+              id="contact"
+              aria-labelledby="conntact-list"
+              class="tab-pane fade"
+            >
               <h2 class="card-title border-bottom pb-2 fw-bold">Contactt</h2>
               <p class="card-text pt-2 ps-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -127,7 +132,7 @@
               </button>
             </div>
             <div id="about" class="tab-pane fade">
-              <h2 class="card-title border-bottom pb-2 fw-bold">Setting</h2>
+              <h2 class="card-title border-bottom pb-2 fw-bold">About</h2>
               <p class="card-text pt-2 ps-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Molestiae dolorem praesentium illum nisi quos officia in
@@ -148,6 +153,7 @@
       </div>
     </div>
 
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
